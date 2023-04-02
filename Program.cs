@@ -6,27 +6,22 @@ using System.Threading.Tasks;
 
 namespace Day5_Assingment
 {
-    class LeapYear
+    class QuotientAndRemainderear
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Enter the Dividend number");
+            int dividend = int.Parse(Console.ReadLine());
+            Console.WriteLine("Enter the ivisor number");
+            int divisor = int.Parse(Console.ReadLine());
 
-            Console.WriteLine("Enter the year");
-            int year = int.Parse(Console.ReadLine());
+            int quotient = dividend / divisor;
+            int remainder = dividend % divisor;
 
-            if ((year % 400) == 0)
-            {
-                Console.WriteLine("Is a leap year" + " " + year);
-            }
-           
-            else if ((year % 4) == 0)
-            {
-                Console.WriteLine(" Is a leap year" + " " + year);
-            }
-            else
-            {
-                Console.WriteLine(" Is not a leap year" + " " + year);
-            }
+            Console.WriteLine("Dividend is:" + dividend);
+            Console.WriteLine("Divisor is:" + divisor);
+            Console.WriteLine("Quotient Number is : " + quotient);
+            Console.WriteLine("Remainder Number is : " + remainder);
             Console.ReadLine();
         }
     }
