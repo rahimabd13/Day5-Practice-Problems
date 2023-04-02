@@ -6,19 +6,33 @@ using System.Threading.Tasks;
 
 namespace Day5_Assingment
 {
-    class CheckEvenorOdd
+    class CheckvowelorConstrant
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter the number");
-            int a = Convert.ToInt32(Console.ReadLine());
-            if (a % 2 == 0)
+            Console.Write(" Enter the Alphabet (A-Z or a-z) : ");
+            char  ch = char.Parse(Console.ReadLine());
+        
+            switch (ch)
             {
-                Console.WriteLine("This is a even number");
-            }
-            else
-            {
-                Console.WriteLine("This is a odd number");
+                case 'a':
+                    Console.WriteLine("The Alphabet is vowel");
+                    break;
+                case 'i':
+                    Console.WriteLine("The Alphabet is vowel");
+                    break;
+                case 'o':
+                    Console.WriteLine("The Alphabet is vowel");
+                    break;
+                case 'u':
+                    Console.WriteLine("The Alphabet is vowel");
+                    break;
+                case 'e':
+                    Console.WriteLine("The Alphabet is vowel");
+                    break;
+                default:
+                    Console.WriteLine("The Alphabet is not a vowel");
+                    break;
             }
             Console.ReadLine();
         }
