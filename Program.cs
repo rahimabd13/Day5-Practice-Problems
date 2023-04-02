@@ -10,29 +10,21 @@ namespace Day5_Assingment
     {
         static void Main(string[] args)
         {
-            Console.Write(" Enter the Alphabet (A-Z or a-z) : ");
-            char  ch = char.Parse(Console.ReadLine());
-        
-            switch (ch)
+            Console.WriteLine("Enter Three Numbers");
+            int num1 = Convert.ToInt32(Console.ReadLine());
+            int num2 = Convert.ToInt32(Console.ReadLine());
+            int num3 = Convert.ToInt32(Console.ReadLine());
+            if ((num1 > num2) && (num1 > num3))
             {
-                case 'a':
-                    Console.WriteLine("The Alphabet is vowel");
-                    break;
-                case 'i':
-                    Console.WriteLine("The Alphabet is vowel");
-                    break;
-                case 'o':
-                    Console.WriteLine("The Alphabet is vowel");
-                    break;
-                case 'u':
-                    Console.WriteLine("The Alphabet is vowel");
-                    break;
-                case 'e':
-                    Console.WriteLine("The Alphabet is vowel");
-                    break;
-                default:
-                    Console.WriteLine("The Alphabet is not a vowel");
-                    break;
+                Console.WriteLine("A is a Largest Number");
+            }
+            else if (num2 > num3)
+            {
+                Console.WriteLine("B is a Largest Number");
+            }
+            else
+            {
+                Console.WriteLine("C is a Largest Number");
             }
             Console.ReadLine();
         }
