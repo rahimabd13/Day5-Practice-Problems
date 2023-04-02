@@ -6,42 +6,27 @@ using System.Threading.Tasks;
 
 namespace Day5_Assingment
 {
-    class FlippingCoinPercentage
+    class LeapYear
     {
         static void Main(string[] args)
         {
 
-            Console.WriteLine("Enter the number of times flipping coin :");
-            int n = int.Parse(Console.ReadLine());  //n = no.of times
+            Console.WriteLine("Enter the year");
+            int year = int.Parse(Console.ReadLine());
 
-            int head = 0, tail = 0;
-            double headpercentage, tailpercentage;
-           
-
-            for (int i = 0; i < n; i++)
+            if ((year % 400) == 0)
             {
-                Random random = new Random();
-                int flip = random.Next(0, 2); //Range (0-1)
-
-                if (flip == 1)
-                {
-                    Console.WriteLine("Head");
-                   
-                    head ++;
-
-                }
-                else 
-                {
-                    Console.WriteLine("Tail");
-                   
-                    tail ++;
-                }
-
+                Console.WriteLine("Is a leap year" + " " + year);
             }
-            headpercentage = (head * 100) / n;
-            tailpercentage = (tail * 100) / n;
-            Console.WriteLine("percentage of head " + headpercentage + "%");
-            Console.WriteLine("percentage of tail " + tailpercentage + "%");
+           
+            else if ((year % 4) == 0)
+            {
+                Console.WriteLine(" Is a leap year" + " " + year);
+            }
+            else
+            {
+                Console.WriteLine(" Is not a leap year" + " " + year);
+            }
             Console.ReadLine();
         }
     }
