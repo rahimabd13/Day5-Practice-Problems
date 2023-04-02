@@ -6,19 +6,20 @@ using System.Threading.Tasks;
 
 namespace Day5_Assingment
 {
-    class QuotientAndRemainderear
+    class CheckEvenorOdd
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter Two Number ");
-            int firstnumber = int.Parse(Console.ReadLine());
-            int secondnumber = int.Parse(Console.ReadLine());
-            firstnumber = firstnumber + secondnumber;
-            secondnumber = firstnumber - secondnumber;
-            firstnumber = firstnumber - secondnumber;
-            Console.WriteLine("After Swapping");
-            Console.WriteLine(firstnumber);
-            Console.WriteLine(secondnumber);
+            Console.WriteLine("Enter the number");
+            int a = Convert.ToInt32(Console.ReadLine());
+            if (a % 2 == 0)
+            {
+                Console.WriteLine("This is a even number");
+            }
+            else
+            {
+                Console.WriteLine("This is a odd number");
+            }
             Console.ReadLine();
         }
     }
